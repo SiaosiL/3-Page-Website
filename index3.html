@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title> TV show rating</title>
+		<meta charset="UTF-8"/>
+		<link href="style.css" type="text/css" rel="stylesheet">
+	</head>
+	<html>
+	<body>
+		
+<h1> Anime Ratings </h1>
+
+<script id="script">
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+</script>
+
+<ol>
+	<li id="li"> <a href="https://www.amazon.com/Rising-Shield-Hero-01/dp/1935548727" /target="_blank"> The Rising Of Shield Hero </a> </li>
+    
+<img src=https://images-na.ssl-images-amazon.com/images/I/81lAIPP2XkL.jpg style="width:300px;height: 400px;">
+
+
+<div class="rating">
+
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+
+&nbsp
+
+<label id="reviews" for="Reviews">  </label>
+
+<textarea id="Reviews" rows="4" cols="50">
+REVIEWS:
+</textarea>
+
+&nbsp
+&nbsp
+	<li id="li"> <a href="https://www.imdb.com/title/tt2250192/" /target="_blank"> Sword Art Online </a> </li>
+ 
+ <img src=https://m.media-amazon.com/images/M/MV5BYjY4MDU2YjMtNzY1MC00ODg1LWIwMzYtMWE5YTA3YTI4ZjMxXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg  style="width:300px;height:400;">
+
+
+
+ <div class="rating">
+
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+
+
+<label id="reviews" for="Reviews">  </label>
+
+<textarea id="Reviews" rows="4" cols="50">
+REVIEWS:
+</textarea>
+
+&nbsp 
+&nbsp
+<li id="li"> <a href="https://en.wikipedia.org/wiki/Lost_Song_(TV_series)" /target="_blank"> Lost Song </a> </li>
+
+<img src=https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Lost_Song_%28TV_series%29.jpg/220px-Lost_Song_%28TV_series%29.jpg style="width:300px;height:400;">
+
+<div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div> 
+
+
+<label id="reviews" for="Reviews">  </label>
+
+<textarea id="Reviews" rows="4" cols="50">
+REVIEWS:
+</textarea>
+
+</ol>
+		
+<a href="index.html" id="next"> Back </a> 
+	</body>
+	</body>
+
+		</body>
+		</html>

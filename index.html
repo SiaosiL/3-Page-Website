@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title> TV show rating</title>
+		<meta charset="UTF-8"/>
+		<link href="style.css" type="text/css" rel="stylesheet">
+	</head>
+	<html>
+	<body>
+
+<h1> Anime Ratings </h1>
+
+<script id="script">
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+  <div id="txt"></div>
+</div>
+
+<ol>
+	<li id="li"> <a href="https://www.animefillerlist.com/shows/black-clover" /target="_blank"> Black Clover </a> </li>
+    
+<img src=https://m.media-amazon.com/images/M/MV5BNTAzYTlkMWEtOTNjZC00ZDU0LWI5ODUtYTRmYzY0MTAzYWZlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_UY1200_CR85,0,630,1200_AL_.jpg style="width:300px;height: 400px;">
+
+
+<div class="rating">
+
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+
+&nbsp
+	
+
+<label id="reviews" for="Reviews">  </label>
+
+<textarea id="Reviews" rows="4" cols="50">
+REVIEWS:
+</textarea>
+
+&nbsp
+	
+	<li id="li"> <a href="https://www.anime-planet.com/anime/naruto-shippuden" /target="_blank"> Naruto Shippuden </a> </li>
+ 
+ <img src=https://i.ebayimg.com/images/g/XiQAAOSwfTVap~ZC/s-l300.jpg style="width:200px;height:400;">
+
+
+
+ <div class="rating">
+
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+
+
+<label id="reviews" for="Reviews"> </label>
+
+<textarea id="Reviews" rows="4" cols="50">
+REVIEWS:
+</textarea>
+
+&nbsp 
+
+<li id="li"> <a href="https://myanimelist.net/anime/32105/Sousei_no_Onmyouji" /target="_blank"> Twin Exorcists </a> </li>
+
+<img src=https://cdn.myanimelist.net/images/anime/12/79556.jpg style="width:200px;height:400;">
+
+<div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div> 
+
+
+<label id="reviews" for="Reviews">  </label>
+
+<textarea id="Reviews" rows="4" cols="50">
+REVIEWS:
+</textarea>
+
+</ol>
+	
+
+		&nbsp 
+
+		<a href="index2.html" id="next">Next</a>
+	</body>
+
+

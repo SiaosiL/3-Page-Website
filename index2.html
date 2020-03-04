@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title> TV show rating</title>
+		<meta charset="UTF-8"/>
+		<link href="style.css" type="text/css" rel="stylesheet">
+	</head>
+	<html>
+	<body>
+
+<h1> Anime Ratings </h1>
+
+<script id="script">
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+</script>
+
+<ol>
+	<li id="li"> <a href="https://www.imdb.com/title/tt3742982/" /target="_blank"> Akame Ga Kill </a> </li>
+    
+<img src=https://m.media-amazon.com/images/M/MV5BZjU2ZDZkYmMtYTA3Yi00NTZkLTgzYjgtOTRhMTFiOWFkODZmXkEyXkFqcGdeQXVyNjkyODc3NjQ@._V1_.jpg style="width:300px;height: 400px;">
+
+
+<div class="rating">
+
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+
+
+<label id="reviews" for="Reviews">  </label>
+
+<textarea id="Reviews" rows="4" cols="50">
+REVIEWS:
+</textarea>
+
+&nbsp
+	
+	
+<li id="li"> <a href="https://www.imdb.com/title/tt0988818/" /target="_blank"> Gintama </a> </li>
+ 
+ <img src=https://manga.tokyo/wp-content/uploads/2016/12/news_large_gintama_visual.jpg  style="width:200px;height:400;">
+
+
+
+ <div class="rating">
+
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+
+
+<label id="reviews" for="Reviews">  </label>
+
+<textarea id="Reviews" rows="4" cols="50">
+REVIEWS:
+</textarea>
+
+&nbsp 
+
+<li id="li"> <a href="https://en.wikipedia.org/wiki/Darker_than_Black" /target="_blank"> Darker Than Black </a> </li>
+
+<img src=https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/DTB_DVD.jpg/220px-DTB_DVD.jpg style="width:200px;height:400;">
+
+<div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div> 
+
+
+<label id="reviews" for="Reviews">  </label>
+
+<textarea id="Reviews" rows="4" cols="50">
+REVIEWS:
+</textarea>
+
+</ol>
+		
+<a href="index.html" id="next"> Back </a> 
+	&nbsp 
+		<a href="index3.html" id="next">Next</a>
+
+	</body>
+	</body>
+
+		</body>
+		</html>

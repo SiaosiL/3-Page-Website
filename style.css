@@ -1,0 +1,35 @@
+body, html{
+	background-color: lightgreen;
+}
+
+.rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+font-size: 50px;
+
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  font-size: 50px;
+
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+font-size: 50px;
+
+}
+
+#li{
+	font-size: 30px;
+}
+
+script{
+	font-size: 70px;
+}
+
+#Reviews{
+	background-color: lightblue;
+}
